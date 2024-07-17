@@ -26,21 +26,30 @@ body {
 
 .btn-primary {
   background-color: #e6533c;
-  color: white;
   font-size: 1rem;
-  width: 200px;
-  height: 55px;
+  width: 190px;
+  height: 40px;
   border: none;
   border-radius: 2.5rem;
+  color: white;
 }
 
 .main-title {
-  color: white;
   font-size: 3rem;
+  font-weight: 800;
+  line-height: 140%;
 }
 .sub-title {
-  color: white;
   font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.desc {
+  width: 80%;
+  line-height: 140%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.7;
 }
 
 .display-flex {
@@ -54,7 +63,8 @@ body {
 /* header section design starts here */
 .header-container {
   height: 100vh;
-  border: 2px solid red;
+  margin-top: 30px;
+  /* border: 2px solid red; */
 }
 
 /* navbar section design starts here */
@@ -85,6 +95,90 @@ body {
 }
 /* navbar section design ends here */
 
+/* banner section design starts here */
+.banner-container {
+  justify-content: space-between;
+  gap: 150px;
+  margin-top: 50px;
+}
+
+.banner-text {
+  width: 50%;
+  /* border: 2px solid white; */
+}
+.banner-img {
+  width: 50%;
+  /* border: 2px solid blue; */
+  position: relative;
+}
+
+.style-text {
+  font-style: oblique;
+  color: yellow;
+}
+
+.banner-text .desc {
+  margin: 40px 0;
+}
+
+.btns {
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+#download-btn {
+  background-color: #111111;
+  color: white;
+  font-size: 1rem;
+  width: 190px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 2.5rem;
+}
+
+.resource-1,
+.resource-2 {
+  width: 170px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  border-radius: 1rem;
+}
+
+.resource-1 {
+  position: absolute;
+  left: 70px;
+  bottom: 100px;
+  gap: 10px;
+}
+
+.resource-2 {
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  top: 120px;
+  right: 100px;
+}
+
+.red-dot {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.resource-1 .desc {
+  width: 100px;
+}
+
+.resource-1 .desc,
+.resource-2 .desc {
+  font-size: 0.7rem;
+}
+
+/* banner section design ends here */
+
 /* header section design ends here */
 
 /* main section design starts here */
@@ -101,5 +195,41 @@ body {
 
   .bar {
     display: block;
+  }
+
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-text {
+    width: 90%;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .banner-img {
+    margin-top: -75px;
+  }
+
+  .resource-1,
+  .resource-2 {
+    width: 150px;
+    height: 70px;
+  }
+
+  .resource-1 {
+    left: -60px;
+    bottom: 240px;
+  }
+
+  .resource-2 {
+    top: 100px;
+    right: -70px;
+  }
+
+  .resource-2 .desc {
+    width: 140px;
   }
 }
