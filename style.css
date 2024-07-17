@@ -40,7 +40,7 @@ body {
   line-height: 140%;
 }
 .sub-title {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: 600;
 }
 
@@ -57,6 +57,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.display-flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* common section design ends here */
 
@@ -64,13 +70,13 @@ body {
 .header-container {
   height: 100vh;
   margin-top: 30px;
+  padding: 20px;
   /* border: 2px solid red; */
 }
 
 /* navbar section design starts here */
 .nav-bar {
   justify-content: space-between;
-  padding: 10px;
 }
 
 .nav-bar ul {
@@ -98,7 +104,7 @@ body {
 /* banner section design starts here */
 .banner-container {
   justify-content: space-between;
-  gap: 150px;
+  gap: 200px;
   margin-top: 50px;
 }
 
@@ -176,12 +182,50 @@ body {
 .resource-2 .desc {
   font-size: 0.7rem;
 }
-
 /* banner section design ends here */
-
 /* header section design ends here */
 
 /* main section design starts here */
+/* change your habit section design starts here */
+.change-your-habits-section {
+  /* border: 2px solid red; */
+  padding: 20px;
+}
+
+.habit-text {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  /* border: 2px solid white; */
+}
+
+.habit-text .desc {
+  margin-top: 18px;
+}
+
+.habits {
+  margin-top: 30px;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movement img {
+  border-radius: 50%;
+}
+
+.habits-title {
+  margin-top: 15px;
+}
+
+.display-flex-column .desc {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* change your habit section design ends here */
 /* main section design ends here */
 
 /* footer section design starts here */
@@ -210,7 +254,7 @@ body {
   }
 
   .banner-img {
-    margin-top: -75px;
+    margin-top: -145px;
   }
 
   .resource-1,
@@ -231,5 +275,26 @@ body {
 
   .resource-2 .desc {
     width: 140px;
+  }
+
+  .change-your-habits-section {
+    margin-top: 430px;
+  }
+
+  .habit-text {
+    width: 90%;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+  }
+
+  .habit-text .desc {
+    font-size: 0.8rem;
+  }
+
+  .habits {
+    flex-direction: column;
+    gap: 20px;
   }
 }
