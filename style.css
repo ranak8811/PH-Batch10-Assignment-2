@@ -224,8 +224,40 @@ body {
   margin-top: 10px;
   text-align: center;
 }
-
 /* change your habit section design ends here */
+
+/* run section design starts here */
+.run-section {
+  width: 90%;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.run-text {
+  width: 50%;
+}
+
+.run-text .desc {
+  margin: 20px 0;
+}
+
+.run-img {
+  width: 50%;
+}
+
+.run-img img {
+  width: 100%;
+  border-radius: 18px;
+}
+/* run section design ends here */
+
 /* main section design ends here */
 
 /* footer section design starts here */
@@ -235,6 +267,10 @@ body {
 @media screen and (max-width: 576px) {
   .nav-bar ul {
     display: none;
+  }
+
+  .desc {
+    font-size: 0.8rem;
   }
 
   .bar {
@@ -296,5 +332,16 @@ body {
   .habits {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .run-section {
+    flex-direction: column;
+    padding: 10px;
+    gap: 50px;
+  }
+
+  .run-text,
+  .run-img {
+    width: 90%;
   }
 }
