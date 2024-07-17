@@ -258,6 +258,63 @@ body {
 }
 /* run section design ends here */
 
+/* bmi calculator section design starts here */
+.bmi-calculator-section {
+  margin-top: 40px;
+}
+
+.bmi-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.calculator-container {
+  padding: 20px;
+  background: rgb(34, 34, 34);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.chart {
+  width: 40%;
+  /* border: 2px solid white; */
+}
+
+.chart .sub-title,
+.calculator-box .sub-title {
+  text-align: left;
+  border: 2px solid blue;
+}
+
+.calculator-box {
+  width: 60%;
+  /* border: 2px solid blue; */
+}
+
+.chart .sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+th {
+  text-align: left;
+}
+
+/* bmi calculator section design ends here */
+
 /* main section design ends here */
 
 /* footer section design starts here */
