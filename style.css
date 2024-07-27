@@ -273,8 +273,7 @@ body {
   background: rgb(34, 34, 34);
   margin-top: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 150px;
   /* border: 2px solid red; */
 }
 
@@ -286,7 +285,8 @@ body {
 .chart .sub-title,
 .calculator-box .sub-title {
   text-align: left;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  /* justify-content: flex-start; */
 }
 
 .calculator-box {
@@ -313,11 +313,181 @@ th {
   text-align: left;
 }
 
+.box {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border: none;
+}
+
+/* .height-weight input,
+.age-sex input,
+.age-sex select {
+  width: 250px;
+} */
+
+.calculator {
+  display: grid;
+  gap: 8px;
+  margin-top: 30px;
+  /* border: 2px solid red; */
+  grid-template-areas:
+    "height weight"
+    "age sex";
+}
+
+select option {
+  color: white;
+}
+
+.height,
+.weight,
+.age,
+.sex {
+  width: 300px;
+  padding: 15px 20px;
+}
+
+.activity {
+  width: 610px;
+  margin-top: 8px;
+  border-radius: 8px;
+  /* border: 2px solid yellow; */
+}
+
+.activity select {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.height {
+  grid-area: height;
+}
+
+.weight {
+  grid-area: weight;
+}
+
+.age {
+  grid-area: age;
+}
+
+.sex {
+  grid-area: sex;
+}
+
+.factor {
+  grid-area: factor;
+}
+
+.calculate-btn {
+  margin-top: 30px;
+  margin-left: -410px;
+}
+
 /* bmi calculator section design ends here */
+
+/* meet out team design starts here */
+.team-text {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* border: 2px solid red; */
+}
+
+.team-text .sub-title,
+.team-text .desc {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-text .desc {
+  margin-top: 25px;
+}
+
+.team-container {
+  background: rgb(34, 34, 34);
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.trainer-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.trainer-1 img {
+  width: 345px;
+  height: 345px;
+  border-radius: 20px;
+}
+
+.t-name {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+/* meet out team design ends here */
 
 /* main section design ends here */
 
 /* footer section design starts here */
+.footer-container {
+  background: rgb(34, 34, 34);
+  margin-top: 80px;
+}
+
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  padding: 20px;
+}
+
+.fitness {
+  width: 40%;
+  margin-top: 40px;
+}
+
+.get-started {
+  width: 30%;
+  margin-top: 40px;
+}
+
+.get-started .sub-title {
+  margin-bottom: 40px;
+}
+
+.get-started li {
+  list-style: none;
+}
+
+.footer-hr {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.reserved {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 50px;
+  /* margin-bottom: 50px; */
+}
+
 /* footer section design ends here */
 
 /* responsive design for small screens */
@@ -400,5 +570,83 @@ th {
   .run-text,
   .run-img {
     width: 90%;
+  }
+
+  .bmi-text {
+    width: 90%;
+  }
+
+  .calculator-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .chart {
+    width: 90%;
+  }
+
+  .calculator-box {
+    width: 100%;
+  }
+
+  .calculator-box .sub-title {
+    /* text-align: left; */
+    /* border: 2px solid red; */
+  }
+
+  .calculator {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    column-gap: 15px;
+    margin-top: 30px;
+    /* border: 2px solid red; */
+    margin-left: -15px;
+  }
+
+  .height,
+  .weight,
+  .age,
+  .sex {
+    width: 160px;
+    margin-left: -8px;
+  }
+
+  .activity {
+    width: 328px;
+    margin-left: -5px;
+  }
+
+  .calculate-btn {
+    margin-left: -145px;
+  }
+
+  .team-text {
+    width: 90%;
+  }
+
+  .team-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .trainer-1 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-content {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .fitness,
+  .get-started {
+    width: 90%;
+  }
+
+  .reserved {
+    text-align: left;
+    padding: 40px;
   }
 }
