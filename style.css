@@ -428,6 +428,7 @@ select option {
   width: 345px;
   height: 345px;
   border-radius: 20px;
+  filter: brightness(0.7);
 }
 
 .t-name {
@@ -461,6 +462,11 @@ select option {
   margin-top: 40px;
 }
 
+.footer-content .fitness .orange-text {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
 .get-started {
   width: 30%;
   margin-top: 40px;
@@ -472,6 +478,7 @@ select option {
 
 .get-started li {
   list-style: none;
+  opacity: 0.7;
 }
 
 .footer-hr {
@@ -486,6 +493,11 @@ select option {
   font-weight: 500;
   padding: 50px;
   /* margin-bottom: 50px; */
+  opacity: 0.7;
+}
+
+.gap-ul li {
+  margin-bottom: 15px;
 }
 
 /* footer section design ends here */
@@ -648,5 +660,10 @@ select option {
   .reserved {
     text-align: left;
     padding: 40px;
+    font-size: 1rem;
+  }
+
+  .footer-content .fitness .orange-text {
+    font-size: 3.5rem;
   }
 }
