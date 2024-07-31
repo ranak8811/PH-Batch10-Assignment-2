@@ -119,8 +119,8 @@ body {
 }
 
 .style-text {
-  font-style: oblique;
-  color: yellow;
+  font-family: "Style Script", cursive;
+  font-style: italic;
 }
 
 .banner-text .desc {
@@ -336,8 +336,9 @@ th {
     "age sex";
 }
 
-select option {
-  color: white;
+.activity select,
+.calculator select {
+  color: rgb(114, 118, 125);
 }
 
 .height,
@@ -601,9 +602,9 @@ select option {
     width: 100%;
   }
 
-  .calculator-box .sub-title {
-    /* text-align: left; */
+  .calculator-box {
     /* border: 2px solid red; */
+    align-items: left;
   }
 
   .calculator {
@@ -613,7 +614,7 @@ select option {
     column-gap: 15px;
     margin-top: 30px;
     /* border: 2px solid red; */
-    margin-left: -15px;
+    margin-left: -12px;
   }
 
   .height,
@@ -625,8 +626,9 @@ select option {
   }
 
   .activity {
+    /* border: 1px solid green; */
     width: 328px;
-    margin-left: -5px;
+    margin: 10px auto;
   }
 
   .calculate-btn {
