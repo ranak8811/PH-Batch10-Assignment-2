@@ -297,6 +297,7 @@ body {
 .chart .sub-title {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  margin-left: -43px;
 }
 
 table {
@@ -325,6 +326,18 @@ th {
 .age-sex select {
   width: 250px;
 } */
+
+.calc-text {
+  align-items: left;
+  /* border: 2px solid yellow; */
+  text-align: left;
+}
+
+.calc-text .sub-title,
+.calc-text .desc {
+  text-align: left;
+  margin-left: 50px;
+}
 
 .calculator {
   display: grid;
@@ -595,6 +608,7 @@ th {
   }
 
   .chart {
+    /* border: 2px solid green; */
     width: 90%;
   }
 
@@ -605,6 +619,11 @@ th {
   .calculator-box {
     /* border: 2px solid rgb(0, 255, 81); */
     align-items: left;
+  }
+
+  .calc-text .sub-title,
+  .calc-text .desc {
+    margin-left: 0;
   }
 
   .calc-input {
